@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% extends 'Base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    </head>
+      <div class="container ">
+        <div class="row">
+           <div class="col-1 text-center  bg-light text-primary custum-border" >
+               <h1 class="mt-2"><i class="fa-brands fa-accusoft"></i></i></h1>
+           </div>
+             <div class="col-7 h1 text-primary">DéchargePropriétaire
+                <h6 class="text-dark "> <i class="fa-solid fa-ok"></i>&nbsp; Accueil décharge effectué propriétaire</h6>
+                 </div>
+            <div class="col-4 md-6 out-side">
+                 <div class="text-center mt-3 ">
+                 <p class="text-primary"> <u> Totals des intérêts % : 5000 FCFA</u></p>
+                 <p class="text-primary">  Totals Frais Agence % : 00 FCFA</p>
+             </div>
+         </div>
+        </div>
+          <div class="row mt-2 custum-border">
+              <div class="bg-dark text-white">
+                  <h2 >LES DECHARGE DU PROPRIETAIRE</h2>
+              </div>
+              <div class="col-9">
+                <table class="table">
+                <tbody>
+                <tr>
+                  <th scope="row">Nom complet</th>
+                  <td>Nom et Prénom</td>
+                </tr>
+                <tr>
+                  <th scope="row">Adresse</th>
+                  <td>Adresse, Ville, 2344</td>
+                </tr>
+                  <th scope="row">Téléphone</th>
+                  <td>78 67 34 34</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Entreprise</th>
+                  <td>Nom d'entreprise</td>
+                </tr>
+                  </tbody>
+                </table>
+             </div>
+              <div class="col-3">
+                  <h2 class="text-center mt-5">
+                      <img src="static/LOGO.png" width="100" height="100">
+                  </h2>
+              </div>
+              <div class="row">
+                  <table class="table scroll">
+                      <tbody>
+                      <tr >
+                         <th scope="col grey">N°</th>
+                         <th scope="col">Montant</th>
+                         <th scope="col">Montant en lettre</th>
+                         <th scope="col">Mois payer</th>
+                         <th scope="col">Date début</th>
+                         <th scope="col">Date Fin</th>
+                         <th scope="col">Status</th>
+                      </tr>
+                      <tr>
+                          <td>1 </td>
+                          <td>15000</td>
+                          <td>quinze mille fcfa</td>
+                          <td>2</td>
+                          <td>3/02/2023</td>
+                          <td>23/9/20024</td>
+                          <td><button class="btn btn-success">Complet</button> </td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>
+      </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock content %}

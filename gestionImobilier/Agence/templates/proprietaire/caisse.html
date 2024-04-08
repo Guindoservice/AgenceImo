@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% extends 'Base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+   <title>Bien au propriétaire </title>
+    </head>
+      <div class="container scroll">
+        <div class="row">
+           <div class="col-1 text-center  bg-light text-primary custum-border" >
+               <h1 class="mt-2"><i class="fa-brands fa-accusoft"></i></i></h1>
+           </div>
+             <div class="col-7 h1 text-primary">Caisses
+                <h6 class="text-dark "> <i class="fa-solid fa-ok"></i>&nbsp; Accueil Caisse</h6>
+                 </div>
+            <div class="col-4 md-6 out-side">
+                 <div class="text-center ">
+                 <p class="text-primary"> <u> Totals des intérêts % : 5000 FCFA</u></p>
+                 <p class="text-primary">  Totals Frais Agence % : 00 FCFA</p>
+             </div>
+         </div>
+        </div>
+          <!-- l'entete de location proprietaire-->
+          <div class="row mt-3 custum-border backgroud" >
+              <div class="col-5 h2 mt-2 text-light"> <i class="fa-solid fa-money-check-dollar"></i> &nbsp; CAISSE GLOBAL</div>
+              <div class="col-1 pt-3"></div>
+              <div class="col-6 text-end">
+                  <button type="button" class="btn btn-primary m-3" data-bs-toggle="collapse" data-bs-target="#recherche"> <i class="fa-solid fa-magnifying-glass" ></i></i> Recherche Avancé</button>
+                  <button type="button" class="btn btn-success m-3" ><i class="fa-solid fa-rotate-left"></i> Actualiser</button>
+              </div>
+              </div>
+              <div class="mt-3" >
+                  <div class="collapse collapse-horizontal" id="recherche" >
+                    <div class="card card-body" style="width: 1030px;" >
+                        <form >
+                            <div class="row" >
+                              <div class=" col mb-3">
+                                <label for="debut" class="col-form-label">Date de début</label>
+                                <input type="date" class="form-control" id="debut">
+                              </div>
+                              <div class=" col mb-3">
+                                <label for="fin" class="col-form-label">Date de fin</label>
+                               <input type="date" class="form-control" id="fin">
+                              </div>
+                                <div class="row">
+                                    <div class="col text-center">
+                                    <button class="btn btn-primary">Recherche</button>
+                                    <button class="btn btn-danger">Annuler</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+              </div>
+          <div class="row mt-3">
+              <div class="col  m-2" style="border-bottom: solid #2A2DEC ; border-style: outset;">
+                  <div class="row">
+                  <div class="col-6 text-primary">
+                      <h5>TOUS LES BIENS</h5>
+                      <h6>TOTAL</h6>
+                      <h5 class="text-primary">0.00 FCFA</h5>
+                  </div>
+                  <div class="col-6 text-end text-primary mt-4 h2">
+                    <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  </div>
+              </div>
+              <div class="col  m-2" style="border-bottom: solid #32A30D ; border-style: outset;">
+                  <div class="row text-success " >
+                  <div class="col-9">
+                      <h5>BIENS NON DISPONIBLES</h5>
+                      <h6>TOTAL</h6>
+                      <h5>0.00 FCFA</h5>
+                  </div>
+                  <div class="col-3 text-end text-success mt-4 h2">
+                     <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  </div>
+
+              </div>
+              <div class="col  m-2" style="border-bottom: solid #E32E51 ; border-style: outset;">
+                   <div class="row text-danger " >
+                  <div class="col-9">
+                      <h5>BIENS DISPONIBLES</h5>
+                      <h6>TOTAL</h6>
+                      <h5>0.00 FCFA</h5>
+                  </div>
+                  <div class="col-3 text-end  mt-4 h2">
+                    <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <!-- deuxième lignes-->
+           <div class="row mt-3">
+              <div class="col  m-2" style="border-bottom: solid #1B2021 ; border-style: outset;">
+                  <div class="row">
+                  <div class="col-9 text-dark">
+                      <h5>TOUS LES PAYEMENTS</h5>
+                      <h6>TOTAL</h6>
+                      <h5>0.00 FCFA</h5>
+                  </div>
+                  <div class="col-3 text-end mt-4 h2">
+                    <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  </div>
+              </div>
+              <div class="col  m-2" style="border-bottom: solid #28CFED  ; border-style: outset;">
+                  <div class="row text-info " >
+                  <div class="col-9">
+                      <h5>TOUS LES CAUTIONS</h5>
+                      <h6>TOTAL</h6>
+                      <h5>0.00 FCFA</h5>
+                  </div>
+                  <div class="col-3 text-end mt-4 h2">
+                     <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  </div>
+
+              </div>
+              <div class="col  m-2" style="border-bottom: solid #6F6F6F ; border-style: outset;">
+                   <div class="row  " style="color:#6F6F6F ;">
+                  <div class="col-9">
+                      <h5>LES FRAIS DE L'AGENCE</h5>
+                      <h6>TOTAL</h6>
+                      <h5>0.00 FCFA</h5>
+                  </div>
+                  <div class="col-3 text-end  mt-4 h2">
+                     <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Troisièmes lignes-->
+           <div class="row mt-3">
+               <div class="col"></div>
+               <div class="col  m-2" style="border-bottom: solid orange ; border-style: outset;">
+                  <div class="row">
+                  <div class="col-9 text-warning">
+                      <h5>TOUS LES INTERETS</h5>
+                      <h6>TOTAL</h6>
+                      <h5 >0.00 FCFA</h5>
+                  </div>
+                  <div class="col-3 text-end text-warning mt-4 h2">
+                   <i class="fa-solid fa-percent"></i>
+                  </div>
+                  </div>
+              </div>
+               <div class="col"></div>
+           </div>
+
+
+
+      </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock content %}

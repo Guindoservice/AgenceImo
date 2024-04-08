@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% extends 'Base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<div class="container scroll  " >
+    <div class="row">
+        <div class="col-1 text-center  bg-light text-primary custum-border" >
+               <h1 class="mt-2"><i class="fa-brands fa-accusoft"></i></i></h1>
+           </div>
+             <div class="col-7 h1 text-primary">Tableau de bords
+                <h6 class="text-dark "> <i class="fa-solid fa-ok"></i>&nbsp; Accueil principale</h6>
+                 </div>
+            <div class="col-4 md-6 out-side">
+                 <div class="text-center ">
+                 <p class="text-primary"> <u> Totals des intérêts % : 5000 FCFA</u></p>
+                 <p class="text-primary">  Totals Frais Agence % : 00 FCFA</p>
+             </div>
+         </div>
+    </div>
+    <h3 class="text-success"> Connectez avec succès</h3>
+
+    <div class="container">
+      <div class="row" >
+
+          <!-- gestion de propriétaire-->
+
+           <div class="col-4 m-0 out-side"  style="border-bottom: solid green;">
+               <h1 class="text-success "><i class="fa-solid fa-user-tie"></i> &nbsp;Propriétaire <a href="#" class="  spp">Accéder</a> </h1>
+               <p>
+               <span>Le nombre des propriétaires</span> <span class="text-center">22</span><br>
+               </p>
+               <input type="range" class="form-range" min="0" max="5" >
+                <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+            </div>
+
+          <!-- gestion des biens-->
+
+          <div class="col-4 m-0 out-side" style="border-bottom: solid orange;">
+                <h1 class="text-danger "><i class="fa-solid fa-hotel"></i> &nbsp;Biens  <a href="#"  class=" spp">Accéder</a></h1>
+               <p>
+               <span>Le nombre des biens</span> <span class="text-center">22</span><br>
+               </p>
+                <input type="range" class="form-range" min="0" max="5" >
+               <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+            </div>
+
+          <!-- gestion de Decharges-->
+
+          <div class="col-4 m-0 out-side" style="border-bottom: solid blue;">
+                <h1 class="text-info " ><i class="fa-solid fa-hotel"></i> &nbsp;Décharges  <a href="#"  class=" spp">Accéder</a></h1>
+               <p>
+               <span>Le nombre décharges</span> <span class="text-center">22</span><br>
+               </p>
+                <input type="range" class="form-range" min="0" max="5" >
+               <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+          </div>
+          </div>
+
+        <!-- deuxième ligne gestion de g-locataire-->
+
+        <div class="row pt-5">
+             <div class="col-4 m-0 out-side" style="border-bottom: solid black;">
+                <h1 class="text-dark " ><i class="fa-solid fa-user"></i> &nbsp;Locataire  <a href="#"  class=" spp">Accéder</a></h1>
+               <p>
+               <span>Le nombre de Locataire</span> <span class="text-center">22</span><br>
+               </p>
+                <input type="range" class="form-range" min="0" max="5" >
+                  <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+          </div>
+
+            <!-- gestion de Location-->
+
+             <div class="col-4 mr-2 out-side" style="border-bottom: solid red;">
+                <h1 class="text-danger " ><i class="fa-solid fa-bed"></i> &nbsp;Location  <a href="#"  class=" spp">Accéder</a></h1>
+               <p>
+               <span>Le nombre Location</span> <span class="text-center">22</span><br>
+               </p>
+                 <lab for="myrange"></lab>
+                <input type="range" class="form-range" min="0" max="5" id="myrange">
+                 <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+          </div>
+
+            <!-- gestion de Utilisateurs-->
+
+             <div class="col-4 m-0 out-side" style="border-bottom: solid blue;">
+                <h1 class="text-primary" ><i class="fa-solid fa-users"></i> &nbsp;Utilisateur  <a href="#"  class=" spp">Accéder</a></h1>
+               <p>
+               <span>Le nombre des utilisateurs</span> <span class="text-center">22</span><br>
+               </p>
+                <input type="range" class="form-range" min="0" max="5" >
+                 <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+
+          </div>
+
+            <!--  Troisième ligne Total des bien-->
+
+            <div class="row pt-5">
+                <div class="row " style="border-bottom: solid black;">
+                    <div class="col-sm-1">
+                        <h1 class="text-primary"><i class="fa-solid fa-hotel"></i> &nbsp;</h1>
+                    </div>
+                    <div class="col-sm-5 h2">TOTAL DES BIEN </div>
+                    <div class="col-sm-6 h4 text-end">
+                        <button class=" mt-2 btn btn-secondary">10000 FCFA</button>
+                    </div>
+                </div>
+                 <!--  Le graphique -->
+                <div class="col">
+                    <h3 class="text-center">Le poucentage des biens </h3>
+                    <div class="text-center">
+                        <img src="static/LOGO.png">
+                    </div>
+                </div>
+            </div>
+
+             <!--  Le rapport des biens -->
+
+            <div class="row pt-5">
+                <div class="row " style="border-bottom: solid black;">
+                    <div class="col-sm-1">
+                        <h1 class="text-danger" ><i class="fa-solid fa-hotel"> </i> &nbsp; </h1>
+                    </div> < >
+                    <div class="col-sm-1 h2 text-success "><i class="fa-solid fa-bed"></i> &nbsp;</div>
+                    <div class="col-sm-4 h4 ">
+                        RAPPORTS DES BIENS
+                    </div>
+                </div>
+                 <!--  Le graphique -->
+                <div class="col">
+                    <h3 class="text-center text-success">Biens en location</h3>
+                </div>
+                <div class="col">
+                    <h3 class="text-danger">Bien en locataire </h3>
+                </div>
+                <h3 class="text-center">Maison de Amadou Diarra</h3>
+
+            </div>
+
+        </div>
+
+        </div>
+      </div>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock content %}

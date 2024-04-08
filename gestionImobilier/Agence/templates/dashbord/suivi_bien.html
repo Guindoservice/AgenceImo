@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% extends 'Base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+   <title>Le Suivi des biens</title>
+    </head>
+      <div class="container scroll">
+        <div class="row">
+           <div class="col-1 text-center  bg-light text-primary custum-border" >
+               <h1 class="mt-2"><i class="fa-brands fa-accusoft"></i></i></h1>
+           </div>
+             <div class="col-7 h1 text-primary">Suivi biens
+                <h6 class="text-dark "> <i class="fa-solid fa-ok"></i>&nbsp; Accueil Suivi bien</h6>
+                 </div>
+            <div class="col-4 md-6 out-side">
+                 <div class="text-center ">
+                 <p class="text-primary"> <u> Totals des intérêts % : 5000 FCFA</u></p>
+                 <p class="text-primary">  Totals Frais Agence % : 00 FCFA</p>
+             </div>
+         </div>
+        </div>
+          <div class="row mt-3">
+              <h2 class="text-center bg-dark text-light ">
+              SUIVIES DES DETAILS BIEN
+              </h2>
+          </div>
+          <div class="row mt-4">
+              <div class="col-5 m-4" style="border-bottom: solid blue; border-style: outset;">
+                  <div class="col-3 h2 bg-primary text-light text-center" >2</div>
+                  <div class="col">
+               <h2 class=" ">  TOTAL DES BIENS  </h2></div>
+
+               <input type="range" class="form-range" min="0" max="5" >
+                <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+            </div>
+              <!--Cantainer de bien en location -->
+                <div class="col-5 m-4 m-O" style="border-bottom: solid green; border-style: outset;">
+                  <div class="col-3 h2 bg-success text-light text-center" >1</div>
+                  <div class="col">
+               <h2 class=" ">  BIENS EN LOCATION  </h2></div>
+
+               <input type="range" class="form-range text-success" min="0" max="5" >
+                <div class="text-end">
+                 <span class="text-center">Progression du nombre </span>
+                 0%</div>
+            </div>
+          </div>
+
+          <!--  la tabeau des biens-->
+          <div class="row mt-4 custum-border">
+               <div class="row " >
+                    <div class="col-sm-1">
+                        <h1 class="text-success"><i class="fa-solid fa-hotel"></i> &nbsp;</h1>
+                    </div>
+                    <div class="col-sm-5 h2">TOTAL DES BIEN </div>
+                    <div class="col-sm-6 h4 text-end">
+                        <button class=" mt-2 btn btn-primary" style="border-radius: 20px;">2</button>
+                    </div>
+                   <div class="col">
+                       <label for="Afiche">Affiche</label>
+                       <select class="form-select" aria-label="Default select example">
+                          <option value="1" id="Afiche">1</option>
+                          <option value="2" id="Affiche">2</option>
+                        </select>
+                   </div>
+                   <div class="col">
+                        <label for="Reche">Affiche</label>
+                         <input type="text" class="form-control" id="Reche" placeholder="Recherche">
+                   </div>
+                   <div class="row mt-4">
+                       <table class="table">
+                           <tr>
+                               <th class="col">N°</th>
+                               <th class="col-sm-8">Biens</th>
+                               <th class="col-sm-2" >Prix global</th>
+                               <th class="col-sm-1" >Poucentage</th>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td class="text-primary">2</td>
+                               <td>4</td>
+                               <td>5</td>
+                           </tr>
+                       </table>
+                   </div>
+                </div>
+
+          </div>
+
+          <!--  les biens   en location-->
+          <div class="row mt-4 custum-border">
+               <div class="row " >
+                    <div class="col-sm-1">
+                        <h1 class="text-primary"><i class="fa-solid fa-bed"></i> &nbsp;</h1>
+                    </div>
+                    <div class="col-sm-5 h2">LES BIENS EN LOCATION</div>
+                    <div class="col-sm-6 h4 text-end">
+                        <button class=" mt-2 btn btn-success" style="border-radius: 20px;">2</button>
+                    </div>
+                   <div class="col">
+                       <label for="Afiche1">Affiche</label>
+                       <select class="form-select" aria-label="Default select example">
+                          <option value="1" id="Afiche1">1</option>
+                          <option value="2" id="Affiche1">2</option>
+                        </select>
+                   </div>
+                   <div class="col">
+                        <label for="Reche1">Affiche</label>
+                         <input type="text" class="form-control" id="Reche1" placeholder="Recherche">
+                   </div>
+                   <div class="row mt-4">
+                       <table class="table">
+                           <tr>
+                               <th class="col">N°</th>
+                               <th class="col-sm-4">Biens</th>
+                               <th class="col-sm-2" >Type bien</th>
+                               <th class="col-sm-2" > Date debut contrat</th>
+                               <th class="col-sm-2" >Date fin contrat</th>
+                               <th class="col-sm-2" >Status</th>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td > <a href="#" > ALY DIAllO </a> </td>
+                               <td>Appartement A</td>
+                               <td> <i class="fa-solid fa-calendar"></i> 2/02/20024</td>
+                               <td><i class="fa-solid fa-calendar"></i> 10/03/2025</td>
+                               <td><a type="button" class="btn btn-success" style="border-radius: 20px;">EN LOCATION</a></td>
+                           </tr>
+                       </table>
+                       <div class="col">
+                           <span>Afficher de 1 à 1 sur Entrés</span>
+                       </div>
+                       <div class="col text-end">
+                           <h3>pagination</h3>
+                       </div>
+                   </div>
+                </div>
+          </div>
+
+           <!--  les biens non en location-->
+          <div class="row mt-4 custum-border">
+               <div class="row " >
+                    <div class="col-sm-1">
+                        <h1 class="text-danger"><i class="fa-solid fa-bed"></i> &nbsp;</h1>
+                    </div>
+                    <div class="col-sm-8 h2">LES BIENS NON EN LOCATION</div>
+                    <div class="col-sm-3 h4 text-end">
+                        <button class=" mt-2 btn btn-danger" style="border-radius: 20px;">2</button>
+                    </div>
+                   <div class="col">
+                       <label for="Afiche2">Affiche</label>
+                       <select class="form-select" aria-label="Default select example">
+                          <option value="1" id="Afiche2">1</option>
+                          <option value="2" id="Affiche2">2</option>
+                        </select>
+                   </div>
+                   <div class="col">
+                        <label for="Reche2">Affiche</label>
+                         <input type="text" class="form-control" id="Reche2" placeholder="Recherche">
+                   </div>
+                   <div class="row mt-4">
+                       <table class="table">
+                           <tr>
+                               <th class="col">N°</th>
+                               <th class="col-sm-4">Identité</th>
+                               <th class="col-sm-2" >Lacalité</th>
+                               <th class="col-sm-2" > Type bien</th>
+                               <th class="col-sm-2" >Montant du Loyer</th>
+                               <th class="col-sm-2" >Status</th>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td >  Harouna guindo  </td>
+                               <td>Kabala</td>
+                               <td>  Appatement B</td>
+                               <td>50000</td>
+                               <td><a type="button" class="btn btn-danger" style="border-radius: 20px;">NON DISPONIBLE</a></td>
+                           </tr>
+                       </table>
+                       <div class="col">
+                           <span>Afficher de 1 à 1 sur Entrés</span>
+                       </div>
+                       <div class="col text-end">
+                           <h3>pagination</h3>
+                       </div>
+                   </div>
+                </div>
+          </div>
+
+
+
+      </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock content %}

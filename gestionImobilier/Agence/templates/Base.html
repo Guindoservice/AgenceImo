@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fr">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'js/myjs.js' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+ <h2 class="text-center bg-dark text-light fixed-top ">
+     Le Systeme de gestion d'une Agence Imobilière
+ </h2>
+ <div class="container-fluids mt-5">
+     <div class="row flex-nowrap">
+    <div class="col-auto- col-md-3 min-vh-100 bg-light">
+        <div class="bg-dark p-2 scroll " >
+            <ul class="nav nav-pills flex-column mt-4">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header h4">
+                      <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa fa-gauge"></i>&nbsp;Tableau de bords
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapseOne" class="accordion-collapse collapse h6 text-light " data-bs-parent="#accordionFlushExample">
+                         <li><a  href="{% url 'accueil' %}" class="nav-link"> <i class="fa-solid fa-house-chimney"></i> &nbsp;Accueil Principale</a></li>
+                        <li><a href="{% url 'location_bien' %}" class="nav-link ">Location des biens</a></li>
+                        <li><a  href="{% url 'suivi_bien' %}" class="nav-link ">Suivi Biens</a></li>
+                      </div>
+
+                      <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <i class="fa-solid fa-user-tie"></i> &nbsp; Propriétaires
+                      </button>
+                    </h2>
+                      <div id="flush-collapse2" class="accordion-collapse collapse h6 text-light show" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="{% url 'bien_proprietaire' %}" class="nav-link"> Bien au Propriétaire</a></li>
+                        <li><a  href="{% url 'decharge_effectuer' %}" class="nav-link ">Décharge Effectués</a></li>
+                        <li><a href="{% url 'bien_en_location' %}" class="nav-link ">Bien en Lacation</a></li>
+                        <li><a href="{% url 'caisse' %}" class="nav-link ">Caisse</a></li>
+                      </div>
+
+                      <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <i class="fa-solid fa-user-tie"></i>&nbsp; Gestion Propriétaire
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse3" class="accordion-collapse collapse h6 text-light show" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="{% url 'list-proprietaire' %}" class="nav-link">Liste Propriétaire</a></li>
+                        <li><a href="{% url 'nouveau-liste' %}" class="nav-link ">Nouveaux</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <i class="fa-solid fa-hotel"></i> &nbsp; Gestion biens
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse4" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="{% url 'list_des_bien' %}" class="nav-link">Liste des biens</a></li>
+                        <li><a href="{% url 'list_detail_bien' %}" class="nav-link ">Liste détail biens </a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-regular fa-user"></i>&nbsp; &nbsp; Gestion Locataires
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse5" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="{% url 'list_locataire' %}" class="nav-link">Liste locataires</a></li>
+                      </div>
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-solid fa-bed"></i> &nbsp; &nbsp;Gestion Location
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse6" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Liste Locations</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <i class="fa-regular fa-credit-card"></i>&nbsp; Gestion Payements
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse7" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Liste Payments</a></li>
+                        <li><a href="#" class="nav-link ">Historiques</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-solid fa-file-invoice"></i>&nbsp; Gestion Décharge
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse8" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Décharge externes</a></li>
+                        <li><a href="#" class="nav-link ">Décharge internes</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-solid fa-rotate-left"></i>  &nbsp; Gestion Cautions
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse9" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Liste Cautions</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-solid fa-right-to-bracket"></i> &nbsp;Gestion Libération
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse10" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Liste Libérations</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-regular fa-credit-card"></i> &nbsp;Gestion Comptes
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse11" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Liste Compte banquaire</a></li>
+                        <li><a href="#" class="nav-link ">Opération banquaire</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <i class="fa-solid fa-network-wired"></i>&nbsp; Gestion employés
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse12" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Liste des employés</a></li>
+                        <li><a href="#" class="nav-link ">Payement employés</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i> &nbsp; Gestion dépenses
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse13" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Afficher</a></li>
+                        <li><a href="#" class="nav-link ">Ajouter</a></li>
+                      </div>
+
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa-solid fa-users"></i>&nbsp; Gestion Utilisateur
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse14" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">Liste utilisateurs</a></li>
+                      </div>
+                       <button class="accordion-button collapsed h1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <i class="fa-solid fa-gear"></i>&nbsp; Configuration
+                      </button>
+                    </h2>
+
+                      <div id="flush-collapse15" class="accordion-collapse collapse h6 text-light" data-bs-parent="#accordionFlushExample">
+                         <li><a  href="#" class="nav-link">parametre</a></li>
+                      </div>
+                  </div>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+         <div class="col-auto- col-md-9 min-vh-100 bg-light">
+             {% block content %}
+             {% endblock content %}
+         </div>
+     </div>
+     </div>
+ </div>
+ <div class="bg-dark text-center text-light ">
+    <div class="text-center p-3">
+        Système de gestion des Agence Imobilières | Tout droit reservé | &copy;2024 | Copyright <br>
+        <a href="https//youngdev223.om">Youngdev223</a>
+    </div>
+</div>
+
+ <style>
+     .scroll{
+     max-height: 1000px;
+     overflow-y: scroll;
+     }
+     .table-scroll{
+      max-height: 500px;
+     overflow-y: scroll;
+     }
+      .nav-link{
+     color:white;
+      font-family: "Cambria", serif;
+      text-size: 24px;
+
+     }
+     .accordion-button{
+     background-color: gray;
+        text-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        font-weight: bold;
+
+     }
+     .logo img{
+       border-style: solid;
+      border-color: info;
+      border-radius: 10px;
+             }
+     .container-bg{
+     text-align: center;
+border-style : solid;
+border-color: green;
+}
+     .spp{
+     font-size: 20px;
+     color:blue;
+     }
+     .custum-border{
+border: solid #2A6388 !important;
+  border-radius: 5px;
+}
+ .border-right{
+  border-right: 2px solid #030608;
+
+}
+.grey{
+  background-color: rgb(124, 128, 126);
+}
+.backgroud{
+background-color: gray;
+}
+ .borer-botom{
+ border-bottom: 2px solid #030608;
+ }
+ }
+ .borer-top{
+ border-top: 2px solid #030608;
+ }
+     .border-right{
+     border-right: 2px solid #030608;
+     border-top: 2px solid #030608;
+     border-bottom: 2px solid #030608;
+     }
+ .out-side{
+  border-style: outset
+ }
+ </style>
+</body>
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% extends 'Base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+   <title>Liste des biens </title>
+    </head>
+      <div class="container">
+        <div class="row">
+           <div class="col-1 text-center  bg-light text-primary custum-border" >
+               <h1 class="mt-2"><i class="fa-brands fa-accusoft"></i></i></h1>
+           </div>
+             <div class="col-7 h1 text-primary">Détails Biens
+                <h6 class="text-dark "> <i class="fa-solid fa-ok"></i>&nbsp; Accueil Détaills des biens</h6>
+                 </div>
+            <div class="col-4 md-6 out-side">
+                 <div class="text-center ">
+                 <p class="text-primary"> <u> Totals des intérêts % : 5000 FCFA</u></p>
+                 <p class="text-primary">  Totals Frais Agence % : 00 FCFA</p>
+             </div>
+         </div>
+        </div>
+          <!-- l'entete de location proprietaire-->
+          <div class="row mt-3 custum-border backgroud" >
+               <div class="col-5 h2 mt-2 text-light"> <i class="fa-solid fa-hotel"></i> &nbsp;LISTE DETAILS BIENS</L></div>
+              <div class="col-1 pt-3"></div>
+              <div class="col-6 text-end ">
+                  <button type="button" class="btn btn-info m-3 text-white" > <i class="fa-solid fa-plus" ></i></i> liste de type bien</button>
+                  <button type="button" class="btn btn-primary m-3" ><i class="fa-solid fa-plus"></i> Nouveau</button>
+              </div>
+              </div>
+
+          <div class="row mt-4 custum-border">
+                   <div class="col">
+                       <label for="Afiche1">Affiche</label>
+                       <select class="form-select" aria-label="Default select example">
+                          <option value="1" id="Afiche1">1</option>
+                          <option value="2" id="Affiche1">2</option>
+                        </select>
+                   </div>
+                   <div class="col">
+                        <label for="Reche1">Affiche</label>
+                         <input type="text" class="form-control" id="Reche1" placeholder="Recherche">
+                   </div>
+                   <div class="row mt-4 table-scroll">
+                       <table class="table ">
+                           <tr>
+                               <th class="col-sm-1 border-right ">N°</th>
+                               <th class="c ol-sm-2 border-right">Identité</th>
+                               <th class="col-sm-1 border-right" >Détail bien</th>
+                               <th class="col-sm-1 border-right" >Prix à payer</th>
+                               <th class="col-sm-1 border-right" >Chambre</th>
+                               <th class="col-sm-2 border-right text-center" >Status</th>
+                               <th class="col-sm-2 border-right text-center" >Action</th>
+                           </tr>
+                           <tr>
+                               <td class="border-right">1</td>
+                               <td class="border-right"> ALY DIAllO  </td>
+                               <td class="border-right">Apprtement A</td>
+                               <td class="border-right">50000 fcfa</td>
+                               <td class="border-right">3</td>
+                               <td class="border-right text-center">
+                               <a type="button" href="#" class="btn btn-success">Disponible</a>
+                               </td>
+                               <td class="border-right text-center">
+                                   <a type="button" href="#" class="btn btn-warning m-2"><i class="fa-solid fa-pencil"></i>&nbsp; </a>
+                                   <a type="button" href="#" class="btn btn-danger"> <i class="fa-solid fa-trash-can"></i></a>
+                               </td>
+                           </tr>
+                       </table>
+                       <div class="col">
+                           <span>Afficher de 1 à 1 sur Entrés</span>
+                       </div>
+                       <div class="col text-end">
+                           <h3>pagination</h3>
+                       </div>
+                   </div>
+                </div>
+          </div>
+      </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock content %}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% extends 'Base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+   <title>Liste des biens </title>
+    </head>
+      <div class="container">
+        <div class="row">
+           <div class="col-1 text-center  bg-light text-primary custum-border" >
+               <h1 class="mt-2"><i class="fa-brands fa-accusoft"></i></i></h1>
+           </div>
+             <div class="col-7 h1 text-primary">Listes des biens
+                <h6 class="text-dark "> <i class="fa-solid fa-ok"></i>&nbsp; Accueil Liste des biens</h6>
+                 </div>
+            <div class="col-4 md-6 out-side">
+                 <div class="text-center ">
+                 <p class="text-primary"> <u> Totals des intérêts % : 5000 FCFA</u></p>
+                 <p class="text-primary">  Totals Frais Agence % : 00 FCFA</p>
+             </div>
+         </div>
+        </div>
+          <!-- l'entete de location proprietaire-->
+          <div class="row mt-3 custum-border backgroud" >
+              <div class="col-7 h2 mt-2 text-light"> <i class="fa-solid fa-hotel"></i> &nbsp LISTES DES BIENS</div>
+              <div class="col-2 pt-3"></div>
+              <div class="col-3 text-end">
+                <button type="button" class="btn btn-primary m-3"  data-bs-toggle="modal" data-bs-target="#myModal" ><i class="fa-solid fa-plus"></i> Nouveau</button>
+              </div>
+              </div>
+
+          <div class="row mt-4 custum-border">
+                   <div class="col">
+                       <label for="Afiche1">Affiche</label>
+                       <select class="form-select" aria-label="Default select example">
+                          <option value="1" id="Afiche1">1</option>
+                          <option value="2" id="Affiche1">2</option>
+                        </select>
+                   </div>
+                   <div class="col">
+                        <label for="Reche1">Affiche</label>
+                         <input type="text" class="form-control" id="Reche1" placeholder="Recherche">
+                   </div>
+                   <div class="row mt-4 table-scroll">
+                       <table class="table ">
+                           <tr>
+                               <th class="col border-right ">Images</th>
+                               <th class="c ol-sm-4 border-right">Identité</th>
+                               <th class="col-sm-2 border-right" >Prix global</th>
+                               <th class="col-sm-2 border-right" >Action</th>
+                           </tr>
+                           <tr>
+                               <td class="border-right">
+                                   <img src="static/LOGO.png" alt="" width="60" height="60">
+                               </td>
+                               <td class="border-right"> ALY DIAllO  </td>
+                               <td class="border-right">50000 fcfa</td>
+                               <td class="border-right">
+                                   <a type="button" href="#" class="btn btn-dark" > <i class="fa-regular fa-eye"> </i>&nbsp;</a>
+                                   <a type="button" href="#" class="btn btn-warning"><i class="fa-regular fa-pen-to-square"></i>&nbsp; </a>
+                                   <a type="button" href="#" class="btn btn-danger"> <i class="fa-solid fa-trash-can"></i></a>
+                               </td>
+                           </tr>
+                       </table>
+                       <div class="col">
+                           <span>Afficher de 1 à 1 sur Entrés</span>
+                       </div>
+                       <div class="col text-end">
+                           <h3>pagination</h3>
+                       </div>
+                   </div>
+                </div>
+          </div>
+      </div>
+
+    <!-- The Modal -->
+<div class="modal " id="myModal">
+  <div class="modal-dialog modal-xl ">
+    <div class="modal-content scroll">
+
+       <!-- Modal Header -->
+      <div class="modal-header backgroud text-white">
+        <h4 class="modal-title">NOUVEAU BIENS</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div class="row">
+          <form >
+              <div class="row">
+              <div class="col-8">
+                   <div class="row">
+                       <div class="row">
+                           <label for="proprie">Propriété</label>
+                          <input type="text" id="proprie" class="form-control">
+                           <label for="local">localité</label>
+                          <input type="text" id="local" class="form-control">
+                            <label for="identite">Identité (Facultatif)</label>
+                          <input type="text" id="identite" class="form-control">
+                           <label for="image">photo</label>
+                           <input type="file" id="image" class="form-control">
+                       </div>
+                  </div>
+            </div>
+              <div class="col-4 custum-border text-center">
+                  <img class="rounded " src="static/LOGO.png" alt="dd" width="150" height="150">
+              </div>
+             </div>
+               <div class="row">
+                    <label for="montant">Montant Global</label>
+                          <input type="number" id="montant" class="form-control">
+                        <div class="row">
+                            <div class="col-3">
+                                  <label for="pourcent">Pourcentage</label>
+                       <select class="form-select" aria-label="Default select example">
+                          <option value="1" id="pourcent">1%</option>
+                          <option value="2" id="pourcent1">2%</option>
+                          <option value="3" id="pourcent3">3%</option>
+                          <option value="4" id="pourcent4">4%</option>
+                          <option value="5" id="pourcent5">5%</option>
+                          <option value="6" id="pourcent6">6%</option>
+                          <option value="7" id="pourcent7">7%</option>
+                          <option value="8" id="pourcent8">8%</option>
+                          <option value="9" id="pourcent9">9%</option>
+                          <option value="10" id="pourcent10">10%</option>
+                          <option value="11" id="pourcent11">11%</option>
+                          <option value="12" id="pourcent12">12%</option>
+                          <option value="13" id="pourcent13">13%</option>
+                          <option value="14" id="pourcent14">14%</option>
+                          <option value="15" id="pourcent15">15%</option>
+                        </select>
+                        </div>
+                            <div class="col-3">
+                                 <label for="piece">Nombre de pièce</label>
+                          <input type="number" id="piece" class="form-control">
+                        </div>
+                            <div class="col-6">
+                                 <label for="charge">Charge (Facultatif)</label>
+                          <input type="text" id="charge" class="form-control">
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col">
+                                 <label for="lat">Latitude</label>
+                          <input type="text" id="lat" class="form-control">
+                        </div>
+                        <div class="col">
+                           <label for="lnt">Longitude</label>
+                          <input type="text" id="lnt" class="form-control">
+                        </div>
+                       </div>
+                    </div>
+          </form>
+       </div>
+          <div class="row">
+              <div class="container custum-border mt-3 h2">
+                  LA LOCALISATION DU BIENS
+
+              </div>
+       </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-success" data-bs-save="modal">Enregistre</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock content %}
